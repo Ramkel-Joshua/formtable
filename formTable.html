@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Starbuzz Coffee</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="logo/headerLogo.gif" id="logo">
+                <img src="logo/headerSlogan.gif" id="slogan">
+            </header>
+            <nav class="menubar">
+                <a href="../starbuzz4.html">HOME</a>
+                <a href="../Blog/blog.html">BLOG</a>
+                <a href="#">INVITENTIONS</a>
+                <a href="#">RECIPES</a>
+                <a href="#">LOCATIONS</a>
+            </nav>
+            <h1 id="beanmachine">The Starbuzz Bean Machine</h1>
+            <div class="fill">
+                <p>Fill out the form below and click "order now" to make an order</p>
+            </div>
+            <form id="formContainer" method="post">
+                <table>
+                    <tr>
+                        <td class="left"><label for="beans">Choose your beans:</label></td>
+                        <td>
+                            <select name="beans" id="beans" class="right">
+                                <option value="house blend">House blend</option>
+                                <option value="mocha cafe latte">Mocha Cafe latte</option>
+                                <option value="cappuccino">Cappuccino</option>
+                                <option value="chai tea">Chai Tea</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left"><label for="type">Type:</label></td>
+                        <td class="right">
+                            <input type="radio" name="bean" id="whole bean"/> Whole bean<br>
+                            <input type="radio" name="bean" id="ground"/> Ground
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left"><label for="bags">Number of bags:</label></td>
+                        <td><input type="number" name="bags" id="bags"/></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><label for="date">Must arrive by date:</label></td>
+                        <td class="right"><input type="date" name="date" id="date"/></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><label for="extras">Extreas:</label></td>
+                        <td class="right">
+                            <input type="checkbox" name="extra" id="gift"/> Gift Wrap<br>
+                            <input type="checkbox" name="extra" id="iclude"/> Include catalog with order
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left"><label for="name">Name:</label></td>
+                        <td class="right"><input type="text" name="name" id="name"/></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><label for="address">Address:</label></td>
+                        <td class="right"><input type="text" name="address" id="address"/></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><label for="city">City:</label></td>
+                        <td class="right"><input type="text" name="city" id="city"/></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><label for="state">State:</label></td>
+                        <td class="right"><input type="text" name="state" id="state"/></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><label for="zip">Zip:</label></td>
+                        <td class="right"><input type="text" name="zip" id="zip"/></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><label for="phone">Phone:</label></td>
+                        <td class="right"><input type="tel" name="phone" id="phone"/></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><label for="comments">Customer Comments:</label></td>
+                        <td class="right"><textarea name="comments" rows="5" cols="50" id="comments"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="submit"><input type="submit" id="submit" value="Order Now"></td>
+                    </tr>
+                </table>
+            </form>
+            <footer>
+                &copy;starbuzz coffee<br>
+                All trademarks and registered trademarks appering on this site are properly of their respective owners.
+            </footer>
+        </div>
+    </body>
+</html>
